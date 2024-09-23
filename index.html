@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sydney Car Rental</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
+    }
+
+    const bookNow = () => {
+      window.location.href = 'http://localhost:5500/services.html'
+    }
+  </script>
+</head>
+
+<body>
+
+
+  <nav>
+
+    <!-- Sidebar for responsiveness  -->
+    <div class="sidebar" id="sidebar">
+      <button class="close-btn" onclick="toggleSidebar()">×</button>
+      <ul>
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./partner.html">Partner</a></li>
+        <li><a href="./career.html">Career</a></li>
+        <li><a href="./reference.html">Reference</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <button class="open-btn" onclick="toggleSidebar()">☰</button>
+    <!-- normal navbar -->
+    <ul>
+      <li><a href="./index.html" class="active">Home</a></li>
+      <li>/</li>
+      <li><a href="./services.html">Services</a></li>
+      <li>/</li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li>/</li>
+      <li><a href="./partner.html">Partner</a></li>
+      <li>/</li>
+      <li><a href="./career.html">Career</a></li>
+      <li>/</li>
+      <li><a href="./reference.html">Reference</a></li>
+      <li>/</li>
+      <li><a href="./about.html">About Us</a></li>
+      <li>/</li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="text-container">
+        <h1>Sydney Car Rentals</h1>
+        <p class="caption">
+          Drive Your Adventure: Explore Sydney in style with our premium
+          rentals
+        </p>
+
+        <button class="book-button" onclick="bookNow()">Book now</button>
+      </div>
+      <div class="image-container">
+        <img id="porsche" src="./images/porsche.png" alt="porsche" width="1238" height="497" />
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h2>Contact Us</h2>
+        <p>
+          Email:
+          <a href="mailto:info@sydneycarrentals.com">info@sydneycarrentals.com</a>
+        </p>
+        <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
+      </div>
+
+      <i class="fa-brands fa-square-facebook"></i>
+      <div class="footer-social">
+        <h2>Follow us on</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter fa-xl"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram fa-xl"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
