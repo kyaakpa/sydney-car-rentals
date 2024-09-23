@@ -4,17 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <script>
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             sidebar.classList.toggle('open');
-        }
-
-        const bookNow = () => {
-            window.location.href = 'http://localhost:5500/services.html'
         }
     </script>
 </head>
@@ -37,7 +33,7 @@
             </ul>
         </div>
 
-        <button class="open-btn" onclick="toggleSidebar()">☰</button>
+        <button class="open-btn" onclick="toggleSidebar()"><span><i class="fa-solid fa-bars"></i></span></button>
         <!-- normal navbar -->
         <ul>
             <li><a href="./index.html" class="active">Home</a></li>
@@ -67,7 +63,7 @@
                     Email:
                     <a href="mailto:info@sydneycarrentals.com">info@sydneycarrentals.com</a>
                 </p>
-                <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
+                <p>Phone: <a href="tel:+123456789">+61 42 123 456 </a></p>
             </div>
 
             <i class="fa-brands fa-square-facebook"></i>

@@ -1,8 +1,6 @@
 main {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
-  overflow: hidden;
 }
 
 .contact-container {
@@ -49,7 +47,7 @@ textarea:focus {
 #bmw {
   position: absolute;
   z-index: 1;
-  top: 350px;
+  top: 300px;
   right: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -77,6 +75,6 @@ textarea:focus {
   }
 
   .names {
-    flex-direction: column; /* Stack the name inputs vertically on smaller screens */
+    flex-direction: column; 
   }
 }
