@@ -1,89 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Team</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
     <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('open');
-        }
+      function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("open");
+      }
     </script>
-</head>
 
-<body>
+    <style>
+      .about-container {
+        align-self: center;
+      }
+
+      .team-desc ul li {
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: contain;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 5px solid rgba(29, 134, 231, 0.774);
+      }
+      ul li img {
+        object-position: -200px -50px;
+      }
+
+      .team-desc ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+      .team-desc ul div {
+        text-align: center;
+      }
+
+      #pawan {
+        object-position: -200px -300px;
+      }
+      #sandip {
+        object-position: -270px -300px;
+      }
+    </style>
+  </head>
+
+  <body>
     <nav>
-
-        <!-- Sidebar for responsiveness  -->
-        <div class="sidebar" id="sidebar">
-            <button class="close-btn" onclick="toggleSidebar()">×</button>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./partner.html">Partner</a></li>
-                <li><a href="./career.html">Career</a></li>
-                <li><a href="./reference.html">Reference</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <button class="open-btn" onclick="toggleSidebar()"><span><i class="fa-solid fa-bars"></i></span></button>
-        <!-- normal navbar -->
+      <!-- Sidebar for responsiveness  -->
+      <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li>/</li>
-            <li><a href="./services.html">Services</a></li>
-            <li>/</li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li>/</li>
-            <li><a href="./partner.html">Partner</a></li>
-            <li>/</li>
-            <li><a href="./career.html">Career</a></li>
-            <li>/</li>
-            <li><a href="./reference.html">Reference</a></li>
-            <li>/</li>
-            <li><a href="./about.html" class="active">About Us</a></li>
-            <li>/</li>
-            <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./partner.html">Partner</a></li>
+          <li><a href="./career.html">Career</a></li>
+          <li><a href="./reference.html">Reference</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
-        <img id="logo" src="./images/logo.png" alt="sydney car rentals logo">
+      </div>
+
+      <button class="open-btn" onclick="toggleSidebar()">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <!-- normal navbar -->
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li>/</li>
+        <li><a href="./services.html">Services</a></li>
+        <li>/</li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li>/</li>
+        <li><a href="./partner.html">Partner</a></li>
+        <li>/</li>
+        <li><a href="./career.html">Career</a></li>
+        <li>/</li>
+        <li><a href="./reference.html">Reference</a></li>
+        <li>/</li>
+        <li><a href="./about.html" class="active">About Us</a></li>
+        <li>/</li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <img id="logo" src="./images/logo.png" alt="sydney car rentals logo" />
     </nav>
 
+    <div class="about-container">
+      <h1>Our Team</h1>
+
+      <div class="team-desc">
+        <ul>
+          <div>
+            <li>
+              <img src="./images/ourTeam/photo.jpg" alt="man" />
+            </li>
+            <div>
+              <h2>Sohit Shrestha</h2>
+              <p>Hello my name is sohit.</p>
+            </div>
+          </div>
+          <div>
+            <li>
+              <img src="./images/ourTeam/pawan.jpeg" alt="man" id="pawan" />
+            </li>
+            <h2>Pawan</h2>
+          </div>
+          <div>
+            <li>
+              <img src="./images/ourTeam/sandip.jpeg" alt="man" id="sandip" />
+            </li>
+            <h2>sandip</h2>
+          </div>
+
+          <div>
+            <li>
+              <img src="./images/ourTeam/bhim.jpeg" alt="man" id="bhim" />
+            </li>
+            <h2>bhim</h2>
+          </div>
+        </ul>
+      </div>
+    </div>
     <footer>
-        <div class="footer-container">
-            <div class="footer-contact">
-                <h2>Contact Us</h2>
-                <p>
-                    Email:
-                    <a href="mailto:info@sydneycarrentals.com">info@sydneycarrentals.com</a>
-                </p>
-                <p>Phone: <a href="tel:+123456789">+61 42 123 456 </a></p>
-            </div>
-
-            <i class="fa-brands fa-square-facebook"></i>
-            <div class="footer-social">
-                <h2>Follow us on</h2>
-                <ul>
-                    <li>
-                        <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitter fa-xl"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-instagram fa-xl"></i></a>
-                    </li>
-                </ul>
-            </div>
+      <div class="footer-container">
+        <div class="footer-contact">
+          <h2>Contact Us</h2>
+          <p>
+            Email:
+            <a href="mailto:info@sydneycarrentals.com"
+              >info@sydneycarrentals.com</a
+            >
+          </p>
+          <p>Phone: <a href="tel:+123456789">+61 42 123 456 </a></p>
         </div>
+
+        <i class="fa-brands fa-square-facebook"></i>
+        <div class="footer-social">
+          <h2>Follow us on</h2>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter fa-xl"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram fa-xl"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
